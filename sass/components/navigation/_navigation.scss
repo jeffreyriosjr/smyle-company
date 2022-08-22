@@ -1,5 +1,7 @@
 .main-navigation {
-	display: block;
+	display: flex;
+	justify-content: flex-start;
+	letter-spacing: 0.1em;
 	width: 100%;
 
 	ul {
@@ -58,7 +60,10 @@
 	}
 
 	a {
-		display: block;
+		display: flex;
+		color: black;
+		margin: 10px;
+		font-weight: 600;
 		text-decoration: none;
 	}
 
@@ -82,6 +87,8 @@
 	}
 
 	.main-navigation ul {
+		margin: 25px;
+		font-size: 22px;
 		display: flex;
 	}
 }
