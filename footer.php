@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -11,24 +12,51 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'smyle-co' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'smyle-co' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'smyle-co' ), 'smyle-co', '<a href="http://underscores.me/">jeffrey alexander rios</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+<footer id="colophon" class="site-footer"> 
+
+  <div class="container-fluid">
+    <h1 class="footer-header">Stay In Touch Pretty Please!</h1>
+    <div class="container p-4 pb-0 text-center">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="footer-btn btn  btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+        <!-- Google -->
+        <a class="footer-btn btn  btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="footer-btn btn  btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a class="footer-btn btn  btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+      </section>
+      <!-- Section: Social media -->
+
+      <div class="footer-all bg-info row">
+      
+        <?php if (has_nav_menu('footer-community-menu')) : ?>
+          <div class="col-lg-6">
+            <?php
+            wp_nav_menu(array(
+              'theme_location' => 'footer-community-menu',
+              'container' => 'ul',
+              'menu_class' => 'nav',
+            ));
+            ?>
+          </div>
+      </div>
+    <?php endif; ?>
+    </div>
+  </div>
+
+
+</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
 
 </body>
+
 </html>

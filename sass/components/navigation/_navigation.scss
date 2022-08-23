@@ -1,7 +1,8 @@
 .main-navigation {
-	display: block;
+	display: flex;
+	justify-content: flex-end;
 	width: 100%;
-
+	max-width: 1400px;
 	ul {
 		display: none;
 		list-style: none;
@@ -58,8 +59,14 @@
 	}
 
 	a {
-		display: block;
+		display: flex;
+		color: currentColor;
+		margin: 10px;
+		font-weight: 600;
 		text-decoration: none;
+		@media all and (max-width: 768px) {
+			margin: 5px;
+		}
 	}
 
 	.current_page_item > a,
@@ -80,9 +87,15 @@
 	.menu-toggle {
 		display: none;
 	}
+	.menu-items {
+	width: auto;
+	}
 
 	.main-navigation ul {
+		font-size: 18px;
+		margin: 25px;
 		display: flex;
+		justify-content: center;
 	}
 }
 

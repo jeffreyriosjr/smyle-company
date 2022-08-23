@@ -21,7 +21,6 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
-
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -49,23 +48,20 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
-
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
-
 /* Normalize
 --------------------------------------------- */
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-
 /* Document
 	 ========================================================================== */
-
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Rubik:wght@300;400&display=swap");
 html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
@@ -73,7 +69,6 @@ html {
 
 /* Sections
 	 ========================================================================== */
-
 /**
  * Remove the margin in all browsers.
  */
@@ -99,7 +94,6 @@ h1 {
 
 /* Grouping content
 	 ========================================================================== */
-
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
@@ -121,7 +115,6 @@ pre {
 
 /* Text-level semantics
 	 ========================================================================== */
-
 /**
  * Remove the gray background on active links in IE 10.
  */
@@ -187,7 +180,6 @@ sup {
 
 /* Embedded content
 	 ========================================================================== */
-
 /**
  * Remove the border on images inside links in IE 10.
  */
@@ -197,7 +189,6 @@ img {
 
 /* Forms
 	 ========================================================================== */
-
 /**
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
@@ -343,7 +334,6 @@ textarea {
 
 /* Interactive
 	 ========================================================================== */
-
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
@@ -360,7 +350,6 @@ summary {
 
 /* Misc
 	 ========================================================================== */
-
 /**
  * Add the correct display in IE 10+.
  */
@@ -377,7 +366,6 @@ template {
 
 /* Box sizing
 --------------------------------------------- */
-
 /* Inherit box-sizing to more easily change it's value on a component level.
 @link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 *,
@@ -393,7 +381,6 @@ html {
 /*--------------------------------------------------------------
 # Base
 --------------------------------------------------------------*/
-
 /* Typography
 --------------------------------------------- */
 body,
@@ -540,9 +527,7 @@ a:visited {
 	color: #800080;
 }
 
-a:hover,
-a:focus,
-a:active {
+a:hover, a:focus, a:active {
 	color: #191970;
 }
 
@@ -550,8 +535,7 @@ a:focus {
 	outline: thin dotted;
 }
 
-a:hover,
-a:active {
+a:hover, a:active {
 	outline: 0;
 }
 
@@ -577,8 +561,7 @@ input[type="submit"]:hover {
 	border-color: #ccc #bbb #aaa;
 }
 
-button:active,
-button:focus,
+button:active, button:focus,
 input[type="button"]:active,
 input[type="button"]:focus,
 input[type="reset"]:active,
@@ -640,16 +623,16 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
-
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
-
 /* Navigation
 --------------------------------------------- */
 .main-navigation {
-	display: block;
+	display: flex;
+	justify-content: flex-end;
 	width: 100%;
+	max-width: 1400px;
 }
 
 .main-navigation ul {
@@ -693,8 +676,17 @@ textarea {
 }
 
 .main-navigation a {
-	display: block;
+	display: flex;
+	color: currentColor;
+	margin: 10px;
+	font-weight: 600;
 	text-decoration: none;
+}
+
+@media all and (max-width: 768px) {
+	.main-navigation a {
+		margin: 5px;
+	}
 }
 
 /* Small menu. */
@@ -704,20 +696,22 @@ textarea {
 }
 
 @media screen and (min-width: 37.5em) {
-
 	.menu-toggle {
 		display: none;
 	}
-
+	.menu-items {
+		width: auto;
+	}
 	.main-navigation ul {
+		font-size: 18px;
+		margin: 25px;
 		display: flex;
+		justify-content: center;
 	}
 }
 
-.site-main .comment-navigation,
-.site-main
-.posts-navigation,
-.site-main
+.site-main .comment-navigation, .site-main
+.posts-navigation, .site-main
 .post-navigation {
 	margin: 0 0 1.5em;
 }
@@ -765,6 +759,205 @@ textarea {
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+/* Home Page
+--------------------------------------------- */
+.smyle-section {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.smyle-section .video-section {
+	justify-content: center;
+}
+
+/* About Us 
+--------------------------------------------- */
+/* Contact Us
+--------------------------------------------- */
+/* Header
+--------------------------------------------- */
+.main-header {
+	padding: 0;
+	margin: 10px;
+	background: linear-gradient(-45deg, #a0aae1 0%, #addf70 13%, #d0ced3 25%, #cded18 38%, #11ceef 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+	background-size: 250% 250%;
+	animation: gradient 15s ease infinite;
+}
+
+.main-header .smyle-logo {
+	letter-spacing: 13px;
+	font-size: 62px;
+	text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff;
+	text-transform: uppercase;
+	font-family: "Raleway", cursive;
+	margin-left: 10px;
+	font-weight: 600;
+	animation: animate 5s linear infinite;
+}
+
+@media all and (max-width: 1084px) {
+	.main-header .smyle-logo {
+		font-size: 42px;
+		margin: 15px;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.main-header .smyle-logo {
+		font-size: 24px;
+		margin: 15px;
+	}
+}
+
+@media all and (max-width: 320px) {
+	.main-header .smyle-logo {
+		font-size: 18px;
+		margin: 25px;
+	}
+}
+
+.main-header li {
+	font-family: open sans;
+	text-align: right;
+	text-shadow: 0 0 10px #212222, 0 0 20px #00b3ff, 0 0 40px #cbd8d8, 0 0 80px #f7fdff, 0 0 120px #242424;
+	color: white;
+}
+
+@media all and (max-width: 1084px) {
+	.main-header li {
+		font-size: 14px;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.main-header li {
+		font-size: 14pxpx;
+		margin: 2px;
+	}
+}
+
+.main-header .smyle-navbar {
+	display: flex;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0%;
+	}
+	50% {
+		background-position: 100%;
+	}
+	100% {
+		background-position: 0%;
+	}
+}
+
+@keyframes animate {
+	0%,
+	18%,
+	20%,
+	50.1%,
+	60%,
+	65.1%,
+	80%,
+	90.1%,
+	92% {
+		color: #0e3742;
+		text-shadow: none;
+	}
+	18.1%,
+	20.1%,
+	20%,
+	50%,
+	60.1%,
+	80.1%,
+	90%,
+	92.1%,
+	100% {
+		color: #fff;
+		text-shadow: 0 0 10px #03bcf4, 0 0 20px #03b3f4, 0 0 40px #03bcf4, 0 0 80px #03b3f4, 0 0 160px #03bcf4;
+	}
+}
+
+/* Footer
+--------------------------------------------- */
+.site-footer {
+	margin: 15px;
+	background: linear-gradient(-45deg, #353952 0%, #f5f6f7 13%, #6c14f1 25%, #0991a1 38%, #edf9fb 50%, #3f1f2b 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.site-footer .footer-header {
+	display: flex;
+	justify-content: center;
+	font-size: 32px;
+	text-align: center;
+}
+
+.site-footer .footer-all {
+	font-size: 24px;
+}
+
+@media screen and (min-width: 325px) {
+	.site-footer .footer-all {
+		display: flex;
+		flex-direction: column;
+		font-size: 18px;
+	}
+}
+
+.site-footer .footer-all .footer-menu {
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+	margin: 15px;
+	width: auto;
+}
+
+@media screen and (min-width: 325px) {
+	.site-footer .footer-all .footer-menu {
+		width: auto;
+	}
+}
+
+.site-footer .footer-all .footer-menu li a {
+	color: black;
+	text-decoration: none;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0%;
+	}
+	50% {
+		background-position: 100%;
+	}
+	100% {
+		background-position: 0%;
+	}
+}
+
+.site-footer .footer-btn {
+	font-size: 3rem;
+}
+
+@media screen and (min-width: 325px) {
+	.site-footer .footer-btn {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.site-footer .footer-btn {
+		font-size: 2rem;
+	}
 }
 
 /* Comments
@@ -877,10 +1070,8 @@ textarea {
 /*--------------------------------------------------------------
 # Plugins
 --------------------------------------------------------------*/
-
 /* Jetpack infinite scroll
 --------------------------------------------- */
-
 /* Hide the Posts Navigation and the Footer when Infinite Scroll is in use. */
 .infinite-scroll .posts-navigation,
 .infinite-scroll.neverending .site-footer {
@@ -895,10 +1086,8 @@ textarea {
 /*--------------------------------------------------------------
 # Utilities
 --------------------------------------------------------------*/
-
 /* Accessibility
 --------------------------------------------- */
-
 /* Text meant only for screen readers. */
 .screen-reader-text {
 	border: 0;
@@ -941,20 +1130,16 @@ textarea {
 /* Alignments
 --------------------------------------------- */
 .alignleft {
-
 	/*rtl:ignore*/
 	float: left;
-
 	/*rtl:ignore*/
 	margin-right: 1.5em;
 	margin-bottom: 1.5em;
 }
 
 .alignright {
-
 	/*rtl:ignore*/
 	float: right;
-
 	/*rtl:ignore*/
 	margin-left: 1.5em;
 	margin-bottom: 1.5em;
@@ -967,3 +1152,5 @@ textarea {
 	margin-right: auto;
 	margin-bottom: 1.5em;
 }
+
+/*# sourceMappingURL=style.css.map */
