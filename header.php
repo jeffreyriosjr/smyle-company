@@ -28,12 +28,12 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'smyle-co' ); ?></a>
 
-	<header id="masthead" class="site-header row">
-	<div class="main-header col">
+	<header id="masthead" class="site-header">
+	<div class="main-header d-flex align-items-center justify-content-center">
 	<div class="smyle-logo">
     SMYLE_CO_
 </div>
-		<nav id="site-navigation" class="main-navigation col">
+		<nav id="site-navigation" class="smyle-navbar contain main-navigation">
 			<button class="menu-items menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'smyle-co' ); ?></button>
 			<?php
 			wp_nav_menu(

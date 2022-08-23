@@ -1,6 +1,11 @@
 .site-footer {
-  padding-top: 10%;
-
+  margin: 15px;
+  background: linear-gradient(-45deg, #353952 0%, #f5f6f7 13%, #6c14f1 25%, #0991a1 38%, #edf9fb 50%, #3f1f2b 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+  background-size:  400% 400%;
+  animation: gradient 20s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .footer-header {
     display: flex;
     justify-content: center;
@@ -24,14 +29,23 @@
       @media screen and (min-width: 325px) {
         width: auto;
       }
-      // @media screen and (min-width: 768px) {
-      //   position: relative;
-      // }
+
       li {
         a {
           color: black;
           text-decoration: none;
         }
+      }
+    }
+    @keyframes gradient {
+      0% {
+        background-position: 0%;
+      }
+      50% {
+        background-position: 100%;
+      }
+      100% {
+        background-position: 0%;
       }
     }
   }
