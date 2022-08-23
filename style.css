@@ -61,6 +61,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Rubik:wght@300;400&display=swap");
 html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
@@ -768,10 +769,12 @@ textarea {
 --------------------------------------------- */
 .main-header {
 	margin: 25px;
+	background: linear-gradient(-45deg, #a0aae1 0%, #addf70 13%, #d0ced3 25%, #cded18 38%, #11ceef 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
 	display: flex;
-	width: 100%;
-	background: #cfde8f;
-	background: black;
+	justify-content: center;
+	align-items: center;
 }
 
 .main-header .smyle-logo {
@@ -792,6 +795,18 @@ textarea {
 	margin-top: -0.6em;
 	text-shadow: 0 0 10px #212222, 0 0 20px #00b3ff, 0 0 40px #cbd8d8, 0 0 80px #f7fdff, 0 0 120px #242424;
 	color: white;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0%;
+	}
+	50% {
+		background-position: 100%;
+	}
+	100% {
+		background-position: 0%;
+	}
 }
 
 @keyframes animate {
