@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+
+.main-header {
+  margin: 25px;
+  display: flex;
+  width: 100%;
+  background: rgb(207, 222, 143);
+  background: black;
+  .smyle-logo {
+    letter-spacing: 13px;
+    text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff,
+      0 0 80px #00b3ff, 0 0 120px #00b3ff;
+    text-transform: uppercase;
+    font-family: "Raleway", cursive;
+    font-size: 4em;
+    font-weight: 600;
+    animation: animate 5s linear infinite;
+    -webkit-boxreflect: below 1px linear-gradient(transparent, #0004);
+  }
+  li {
+    text-align: right;
+    font-size: 32px;
+    margin: 0;
+    margin-top: -0.6em;
+    text-shadow: 0 0 10px #212222, 0 0 20px #00b3ff, 0 0 40px #cbd8d8, 0 0 80px #f7fdff, 0 0 120px #242424;
+    color: white;  }
+}
+
+@keyframes animate {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: #0e3742;
+    text-shadow: none;
+  }
+
+  18.1%,
+  20.1%,
+  20%,
+  50%,
+  60.1%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03b3f4, 0 0 40px #03bcf4,
+      0 0 80px #03b3f4, 0 0 160px #03bcf4;
+  }
+}

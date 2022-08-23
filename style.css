@@ -60,6 +60,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
@@ -627,10 +628,7 @@ textarea {
 /* Navigation
 --------------------------------------------- */
 .main-navigation {
-	display: flex;
-	justify-content: flex-start;
-	letter-spacing: 0.1em;
-	width: 100%;
+	margin: 5px 5px 0px 5px;
 }
 
 .main-navigation ul {
@@ -675,7 +673,7 @@ textarea {
 
 .main-navigation a {
 	display: flex;
-	color: black;
+	color: currentColor;
 	margin: 10px;
 	font-weight: 600;
 	text-decoration: none;
@@ -695,6 +693,7 @@ textarea {
 		margin: 25px;
 		font-size: 22px;
 		display: flex;
+		justify-content: center;
 	}
 }
 
@@ -751,12 +750,77 @@ textarea {
 
 /* Home Page
 --------------------------------------------- */
+.smyle-section {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.smyle-section .video-section {
+	justify-content: center;
+}
+
 /* About Us 
 --------------------------------------------- */
 /* Contact Us
 --------------------------------------------- */
 /* Header
 --------------------------------------------- */
+.main-header {
+	margin: 25px;
+	display: flex;
+	width: 100%;
+	background: #cfde8f;
+	background: black;
+}
+
+.main-header .smyle-logo {
+	letter-spacing: 13px;
+	text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff;
+	text-transform: uppercase;
+	font-family: "Raleway", cursive;
+	font-size: 4em;
+	font-weight: 600;
+	animation: animate 5s linear infinite;
+	-webkit-boxreflect: below 1px linear-gradient(transparent, #0004);
+}
+
+.main-header li {
+	text-align: right;
+	font-size: 32px;
+	margin: 0;
+	margin-top: -0.6em;
+	text-shadow: 0 0 10px #212222, 0 0 20px #00b3ff, 0 0 40px #cbd8d8, 0 0 80px #f7fdff, 0 0 120px #242424;
+	color: white;
+}
+
+@keyframes animate {
+	0%,
+	18%,
+	20%,
+	50.1%,
+	60%,
+	65.1%,
+	80%,
+	90.1%,
+	92% {
+		color: #0e3742;
+		text-shadow: none;
+	}
+	18.1%,
+	20.1%,
+	20%,
+	50%,
+	60.1%,
+	80.1%,
+	90%,
+	92.1%,
+	100% {
+		color: #fff;
+		text-shadow: 0 0 10px #03bcf4, 0 0 20px #03b3f4, 0 0 40px #03bcf4, 0 0 80px #03b3f4, 0 0 160px #03bcf4;
+	}
+}
+
 /* Footer
 --------------------------------------------- */
 .site-footer {
