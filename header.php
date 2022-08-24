@@ -31,7 +31,10 @@
 	<header id="masthead" class="site-header">
 	<div class="main-header d-flex align-items-center justify-content-center">
 	<div class="smyle-logo">
-    SMYLE_CO_
+    SMYLE_Co_
+	<div class="blk-wht-logo">
+		
+	</div>
 </div>
 		<nav id="site-navigation" class="smyle-navbar contain main-navigation">
 			<button class="menu-items menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'smyle-co' ); ?></button>
