@@ -29,10 +29,19 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'smyle-co' ); ?></a>
 
 	<header id="masthead" class="site-header">
-	<div class="main-header d-flex align-items-center justify-content-center">
+	<div class="main-header">
 	<div class="smyle-logo">
-    SMYLE_CO_
-</div>
+		<img src="http://smyleco.local/wp-content/uploads/2022/08/cropped-output-onlinepngtools-1.png" class="blk-wht-logo">
+	</div>
+	<div class="logo-headers">
+	<p class="header-logo-one">SMYLE_Co_</p>
+	
+	<p class="header-logo-two"> A SAN DIEGO-BASED SMYLE COMPANY</p>
+	</div>
+ 
+
+
+
 		<nav id="site-navigation" class="smyle-navbar contain main-navigation">
 			<button class="menu-items menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'smyle-co' ); ?></button>
 			<?php

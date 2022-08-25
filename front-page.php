@@ -19,7 +19,6 @@ get_header();
     <section class="smyle-section container-fluid">
     <div class="main">
         <div class="video-section">
-    <!-- <iframe  title="vimeo-player" src="https://player.vimeo.com/video/740412657?h=8891ad109c" width="640" height="360" frameborder="0" allowfullscreen></iframe> -->
         </div>
 </div>
     </section>
