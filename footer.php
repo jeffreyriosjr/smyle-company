@@ -28,9 +28,9 @@
       <div class="footer-all row">
       <ul class="icon-section">
       <li class="icon-links"><a href="https://www.facebook.com/SMYLE-Co-101844815983658/"><i class="fab fa-facebook-f"></i></a></li>
-      <li class="icon-links"><a href="https://www.instagram.com/p/CQ3lI58hgnW/"><i class="fab fa-instagram"></i></a></li>
-      <li class="icon-links"><a href="https://www.instagram.com/p/CQ3lI58hgnW/"><i class="fab fa-twitter"></i></a></li>
-      <li class="icon-links"><a href="https://www.instagram.com/p/CQ3lI58hgnW/"><i class="fab fa-apple"></i></a></li>
+      <li class="icon-links"><a href="https://www.instagram.com/smyle_co_/"><i class="fab fa-instagram"></i></a></li>
+      <li class="icon-links"><a href="https://www.instagram.com/smyle_co_/"><i class="fab fa-twitter"></i></a></li>
+      <li class="icon-links"><a href="https://www.instagram.com/smyle_co_/"><i class="fab fa-apple"></i></a></li>
     </ul>
         <?php if (has_nav_menu('footer-community-menu')) : ?>
           <div class="col-lg-6">
