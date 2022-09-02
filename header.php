@@ -27,23 +27,23 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'smyle-co' ); ?></a>
-
 	<header id="masthead" class="site-header">
 	<div class="main-header">
 	<div class="smyle-logo">
 		<img src="http://smyleco.local/wp-content/uploads/2022/08/cropped-output-onlinepngtools-1.png" class="blk-wht-logo">
 	</div>
-	<div class="logo-headers">
+	<div class="logo-headers" >
+	<a class="the-a-tag"href="http://smyleco.local/">	
 	<p class="header-logo-one">SMYLE_Co_</p>
-	
 	<p class="header-logo-two"> A SAN DIEGO-BASED SMYLE COMPANY</p>
+	</a>
 	</div>
  
 
 
 
-		<nav id="site-navigation" class="smyle-navbar contain main-navigation">
-			<button class="menu-items menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'smyle-co' ); ?></button>
+		<nav id="site-navigation" class="smyle-navbar main-navigation">
+			<button class="menu-items menu-toggle mt-3" aria-controls="primary-menu" aria-expanded="false"></button>
 			<?php
 			wp_nav_menu(
 				array(

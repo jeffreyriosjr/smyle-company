@@ -5,7 +5,6 @@
   display: flex;
   flex-direction: row;
   padding: 0;
-  margin: 5px 5px 5px 0px;
   background: linear-gradient(
     -45deg,
     #a0aae1 0%,
@@ -25,29 +24,25 @@
     .blk-wht-logo {
       color: #00b3ff;
       width: 150px;
-      height: 75px;
       filter: invert(46%) sepia(99%) saturate(2071%) hue-rotate(162deg) brightness(95%) contrast(102%);
       
     }
   }
-  .logo-headers {
-    width: 50%;
+  .logo-headers, .the-a-tag {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 10px 0px 0px 0px;
-    text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff,
-      0 0 80px #00b3ff, 0 0 120px #00b3ff;
+    margin: 0px 0px 0px 15px;
+    text-shadow: 0 0 10px #d1da73, 0 0 20px #0a4761, 0 0 40px #00b3ff,
+      0 0 80px #44cf59, 0 0 120px #aa5181;
     font-family: "Raleway", cursive;
     animation: animate 5s linear infinite;
+    text-decoration: none;
+    text-align: center;
   }
 
-  @media all and (max-width: 1084px) {
-    font-size: 42px;
-    margin: 15px;
-  }
   @media all and (max-width: 768px) {
     font-size: 24px;
-    margin: 15px;
   }
   @media all and (max-width: 320px) {
     font-size: 18px;
@@ -58,11 +53,18 @@
     margin: 0px 0px 0px 25px;
     font-size: 44px;
     width: fit-content;
+    @media all and (max-width: 768px) {
+      font-size: 32px;
+      padding-top: 10px;
+    }
   }
   .header-logo-two {
-    margin: -10px 0px 5px 0px;
-    font-size: 16px;
-    width: fit-content;
+    margin: -10px -25px;
+    font-size: 18px;
+    width: max-content;
+    @media all and (max-width: 768px) {
+      font-size: 14px;
+    }
   }
 
   li {
