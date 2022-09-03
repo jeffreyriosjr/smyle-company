@@ -17,8 +17,8 @@ get_header();
 <main id="primary" class="site-main">
 
     <section class="smyle-section container-fluid">
-    <div class="main">
-       
+    <div class="bg-info">
+       HELLO
 </div>
     </section>
     <?php the_content(); ?> 
