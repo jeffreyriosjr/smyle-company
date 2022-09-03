@@ -32,9 +32,7 @@ get_header();
 		endwhile; // End of the loop.
 		?>
     <section class="smyle-section container-fluid">
-    <div class="bg-info">
-       HELLO
-</div>
+
     </section>
     <?php the_content(); ?> 
 </main>
