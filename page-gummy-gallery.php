@@ -30,9 +30,7 @@ get_header();
 
 		endwhile; // End of the loop.
 		?>
-    <section class="smyle-section container-fluid">
-
-    </section>
+   
     <?php the_content(); ?> 
 </main>
 

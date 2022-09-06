@@ -776,6 +776,8 @@ textarea {
 --------------------------------------------- */
 /* Contact Us
 --------------------------------------------- */
+/* Gummy Gallery
+--------------------------------------------- */
 /* Header
 --------------------------------------------- */
 .main-header {
@@ -869,6 +871,10 @@ textarea {
 
 .main-header .smyle-navbar {
 	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: flex-end;
+	justify-content: center;
 }
 
 @keyframes gradient {
@@ -919,7 +925,7 @@ textarea {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 500px;
+	height: auto;
 }
 
 .site-footer .footer-header {
@@ -956,7 +962,7 @@ textarea {
 @media all and (max-width: 678px) {
 	.site-footer ul li {
 		margin: 5% 5% 5% 5%;
-		padding: 5% 5% 5% 5%;
+		width: 15%;
 	}
 }
 
@@ -965,6 +971,12 @@ textarea {
 	color: #a5ebee !important;
 	line-height: 80px;
 	transition: 0.5s;
+}
+
+@media all and (max-width: 678px) {
+	.site-footer ul li a .fab {
+		margin: -15px;
+	}
 }
 
 .site-footer ul li a {
@@ -977,6 +989,13 @@ textarea {
 	transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
 	transition: 0.5s;
 	box-shadow: -30px 30px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media all and (max-width: 678px) {
+	.site-footer ul li a {
+		width: 55px;
+		height: 55px;
+	}
 }
 
 .site-footer ul li a::before {
@@ -1061,10 +1080,6 @@ textarea {
 }
 
 @media all and (max-width: 678px) {
-	.site-footer ul {
-		width: auto;
-		display: contents;
-	}
 	.footer-all {
 		display: flex;
 		justify-content: center;
