@@ -17,8 +17,18 @@ get_header();
 <main id="primary" class="site-main">
 
     <section class="smyle-section container-fluid">
-    <div class="main">
-       
+    <div class="main bg-info">
+
+
+       <div class="loader">
+        <div class="text">
+            <p>Smyle_Co_ A San Diego Based Company</p>
+        </div>
+        <span><i></i></span>
+       </div>
+
+
+
 </div>
     </section>
     <?php the_content(); ?> 
