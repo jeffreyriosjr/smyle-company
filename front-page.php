@@ -14,25 +14,25 @@
 get_header();
 
 ?>
-<main id="primary" class="site-main">
 
-    <section class="smyle-section container-fluid">
-    <div class="main bg-info">
-
-
+    <body class="the-body"> 
+    <div class="logo"> <img src="http://smyleco.local/wp-content/uploads/2022/08/output-onlinepngtools.png"class="the-logo" /></div>
        <div class="loader">
         <div class="text">
-            <p>Smyle_Co_ A San Diego Based Company</p>
+            <p>Smyle_Co_ A San Diego Based Company -</p>
         </div>
         <span><i></i></span>
        </div>
 
+    <script>
+        let text = document.querySelector('.text p');
+        text.innerHTML = text.innerText.split("").map((char,i) => 
+        `<b style="transform:rotate(${i * 9.5}deg)">${char}</b>`).join(""); 
+    </script>
 
-
-</div>
-    </section>
+</body>
     <?php the_content(); ?> 
-</main>
+
 
 
 <?php

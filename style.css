@@ -762,30 +762,49 @@ textarea {
 
 /* Front Page
 --------------------------------------------- */
-.smyle-section {
-	width: 100%;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Raleway", cursive;
+}
+
+.the-body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
+	background: #eaeef0;
 }
 
 .loader {
 	position: relative;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	height: 50vh;
 }
 
-.laoder span {
+.loader span {
 	position: relative;
 	width: 250px;
 	height: 250px;
 	background: #eaeef0;
 	border: 6px solid #eaeef0;
-	box-shadow: -8px -8px 15px white, 8px 8px 25 px rgba(0, 0, 0, 0.15);
+	box-shadow: -8px -8px 15px white, 8px 8px 25px rgba(0, 0, 0, 0.15);
 	border-radius: 50%;
 	overflow: hidden;
+}
+
+.the-logo {
+	top: 31%;
+	left: 46.7%;
+	height: 120px;
+	z-index: 2;
+	position: absolute;
+	color: linear-gradient(#42abff, #ff4f8b, #ffeb3b);
+	filter: invert(46%) sepia(99%) saturate(2071%) hue-rotate(162deg) brightness(95%) contrast(102%);
 }
 
 .loader span::before {
@@ -794,7 +813,7 @@ textarea {
 	inset: 40px;
 	background: #eaeef0;
 	border-radius: 50%;
-	box-shadow: -8px -8px 15px white, 8px 8px 25 px rgba(0, 0, 0, 0.15), inset 3px 3px 10px rgba(0, 0, 0, 0.1), inset -1px -1px, 15px white;
+	box-shadow: -8px -8px 15px white, 8px 8px 25px rgba(0, 0, 0, 0.15), inset 3px 3px 10px rgba(0, 0, 0, 0.1), inset -1px -1px, 15px white;
 	border: 2px solid #eaeef0;
 	z-index: 1;
 }
@@ -805,14 +824,27 @@ textarea {
 	background: linear-gradient(#42abff, #ff4f8b, #ffeb3b);
 	border-radius: 50%;
 	filter: blur(5px);
-	animation: animate 1s linear infinite;
+	-webkit-animation: rotate 1s linear infinite;
 }
 
-@keyframes animate {
+@-webkit-keyframes rotate {
 	0% {
+		-webkit-transform: rotate(0deg);
 		transform: rotate(0deg);
 	}
 	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes rotate {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
 		transform: rotate(360deg);
 	}
 }
@@ -821,6 +853,26 @@ textarea {
 	position: absolute;
 	width: 340px;
 	height: 340px;
+	border-radius: 50%;
+	animation: animateText 25s linear infinite;
+}
+
+@keyframes animateText {
+	0% {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.text b {
+	position: absolute;
+	left: 50%;
+	display: block;
+	transform-origin: 0 170px;
+	font-weight: normal;
+	font-size: 1.4em;
 }
 
 /* About Us 
