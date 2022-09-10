@@ -762,19 +762,10 @@ textarea {
 
 /* Front Page
 --------------------------------------------- */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Raleway", cursive;
-}
-
 .the-body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	background: #eaeef0;
+	position: fixed;
+	z-index: 2;
+	right: 5%;
 }
 
 .loader {
@@ -783,13 +774,12 @@ textarea {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 50vh;
 }
 
 .loader span {
 	position: relative;
-	width: 250px;
-	height: 250px;
+	width: 200px;
+	height: 200px;
 	background: #eaeef0;
 	border: 6px solid #eaeef0;
 	box-shadow: -8px -8px 15px white, 8px 8px 25px rgba(0, 0, 0, 0.15);
@@ -798,13 +788,12 @@ textarea {
 }
 
 .the-logo {
-	top: 31%;
-	left: 46.7%;
-	height: 120px;
+	top: 15%;
+	left: 25%;
+	width: 50%;
 	z-index: 2;
 	position: absolute;
-	color: linear-gradient(#42abff, #ff4f8b, #ffeb3b);
-	filter: invert(46%) sepia(99%) saturate(2071%) hue-rotate(162deg) brightness(95%) contrast(102%);
+	border-radius: 50%;
 }
 
 .loader span::before {
@@ -851,8 +840,8 @@ textarea {
 
 .text {
 	position: absolute;
-	width: 340px;
-	height: 340px;
+	width: 250px;
+	height: 250px;
 	border-radius: 50%;
 	animation: animateText 25s linear infinite;
 }
@@ -868,11 +857,15 @@ textarea {
 
 .text b {
 	position: absolute;
-	left: 50%;
+	left: 52%;
 	display: block;
-	transform-origin: 0 170px;
-	font-weight: normal;
-	font-size: 1.4em;
+	transform-origin: 0 125px;
+	font-weight: 900;
+	font-size: 16px;
+	animation: animate 5s gradient infinite;
+	text-decoration: none;
+	text-align: center;
+	color: black;
 }
 
 /* About Us 

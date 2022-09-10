@@ -15,8 +15,8 @@ get_header();
 
 ?>
 
-    <body class="the-body"> 
-    <div class="logo"> <img src="http://smyleco.local/wp-content/uploads/2022/08/output-onlinepngtools.png"class="the-logo" /></div>
+    <section class="the-body"> 
+     <img src="http://smyleco.local/wp-content/uploads/2022/08/output-onlinepngtools.png"class="the-logo" />
        <div class="loader">
         <div class="text">
             <p>Smyle_Co_ A San Diego Based Company -</p>
@@ -30,7 +30,7 @@ get_header();
         `<b style="transform:rotate(${i * 9.5}deg)">${char}</b>`).join(""); 
     </script>
 
-</body>
+</section>
     <?php the_content(); ?> 
 
 
