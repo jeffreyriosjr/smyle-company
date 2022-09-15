@@ -1,113 +1,135 @@
-
 .the-body {
-    position: fixed;
-    z-index: 2;
-    right: 5%;
-
+  position: fixed;
+  z-index: 2;
+  right: 5%;
 }
 .loader {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .loader span {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    background: #eaeef0;
-    border: 6px solid #eaeef0;
-    box-shadow: -8px -8px 15px rgba(255, 255, 255, 1),
-    8px 8px 25px rgba(0,0,0,0.15);
-    border-radius: 50%;
-    overflow: hidden;  
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: #eaeef0;
+  border: 3px solid #eaeef0;
+  box-shadow: -2px -8px 15px rgba(255, 255, 255, 1),
+    8px 8px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  overflow: hidden;
+
+  @media all and (max-width: 425px) {
+    width: 100px;
+    height: 100px;
+  }
 }
 .the-logo {
-    top: 15%;
-    left: 25%;
-    width: 50%;
-    z-index: 2;
-    position: absolute;
-    border-radius: 50%;
+  top: 15%;
+  left: 25%;
+  width: 50%;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
 }
 
-
-.loader span::before 
-{
-    content: '';
-    position: absolute;
-    inset: 40px;
-    background: #eaeef0;
-    border-radius: 50%;
-    box-shadow: -8px -8px 15px rgba(255, 255, 255, 1 ),
-    8px 8px 25px rgba(0,0,0,0.15),
-    inset 3px 3px 10px rgba(0,0,0,0.1), 
+.loader span::before {
+  content: "";
+  position: absolute;
+  inset: 40px;
+  background: #eaeef0;
+  border-radius: 50%;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 1),
+    8px 8px 25px rgba(0, 0, 0, 0.15), inset 3px 3px 10px rgba(0, 0, 0, 0.1),
     inset -1px -1px, 15px rgba(255, 255, 255, 1);
-    border: 2px solid #eaeef0;
-    z-index: 1;
+  border: 2px solid #eaeef0;
+  z-index: 1;
+  @media all and (max-width: 425px) {
+    inset: 20px;
+  }
 }
 .loader span i {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(#42abff, #ff4f8b, #ffeb3b);
-    border-radius: 50%;
-    filter: blur(5px);
-    -webkit-animation: rotate 1s linear infinite;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(#42abff, #ff4f8b, #ffeb3b);
+  border-radius: 50%;
+  filter: blur(5px);
+  -webkit-animation: rotate 1s linear infinite;
 }
- @-webkit-keyframes rotate {
-    0%
-    {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-    }
-    100%
-    {
-        -webkit-transform: rotate(360deg);
-                transform: rotate(360deg);
-    }
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 @keyframes rotate {
-    0% {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-                transform: rotate(360deg);
-    }
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 .text {
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    animation: animateText 25s linear infinite;
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  animation: animateText 25s linear infinite;
+  @media all and (max-width: 425px) {
+    width: 0;
+  }
 }
-@keyframes animateText
-{
-    0%
-    {
-        transform: rotate(360deg);
-    }
-    100%
-    {
-        transform: rotate(0deg);
-    }
+@keyframes animateText {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
-.text b 
-{
-    position: absolute;
-    left: 52%;
-    display: block;
-    transform-origin: 0 125px;
-    font-weight: 900;
-    font-size: 16px;
-    // text-shadow: 0 0 10px #d1da73, 0 0 20px #0a4761, 0 0 40px #00b3ff, 0 0 80px #44cf59, 0 0 120px #aa5181;
-    
-    animation: animate 5s gradient infinite;
-    text-decoration: none;
-    text-align: center;
-    color: black;
+.text b {
+  position: absolute;
+  left: 52%;
+  display: block;
+  transform-origin: 0 125px;
+  font-weight: 900;
+  font-size: 12px;
+  animation: animate 5s gradient infinite;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+
+  @media all and (max-width: 425px) {
+    transform-origin: 0 70.5px;
+    top: 21%;
+    background: linear-gradient(45deg, #2febdc, #eb413b, #ffa300, #e422eb);
+    background-size: 400%;
+    animation: text-gradient 15s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  @keyframes text-gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 }

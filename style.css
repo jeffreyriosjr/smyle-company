@@ -781,10 +781,17 @@ textarea {
 	width: 200px;
 	height: 200px;
 	background: #eaeef0;
-	border: 6px solid #eaeef0;
-	box-shadow: -8px -8px 15px white, 8px 8px 25px rgba(0, 0, 0, 0.15);
+	border: 3px solid #eaeef0;
+	box-shadow: -2px -8px 15px white, 8px 8px 25px rgba(0, 0, 0, 0.15);
 	border-radius: 50%;
 	overflow: hidden;
+}
+
+@media all and (max-width: 425px) {
+	.loader span {
+		width: 100px;
+		height: 100px;
+	}
 }
 
 .the-logo {
@@ -797,7 +804,7 @@ textarea {
 }
 
 .loader span::before {
-	content: '';
+	content: "";
 	position: absolute;
 	inset: 40px;
 	background: #eaeef0;
@@ -805,6 +812,12 @@ textarea {
 	box-shadow: -8px -8px 15px white, 8px 8px 25px rgba(0, 0, 0, 0.15), inset 3px 3px 10px rgba(0, 0, 0, 0.1), inset -1px -1px, 15px white;
 	border: 2px solid #eaeef0;
 	z-index: 1;
+}
+
+@media all and (max-width: 425px) {
+	.loader span::before {
+		inset: 20px;
+	}
 }
 
 .loader span i {
@@ -846,6 +859,12 @@ textarea {
 	animation: animateText 25s linear infinite;
 }
 
+@media all and (max-width: 425px) {
+	.text {
+		width: 0;
+	}
+}
+
 @keyframes animateText {
 	0% {
 		transform: rotate(360deg);
@@ -861,11 +880,37 @@ textarea {
 	display: block;
 	transform-origin: 0 125px;
 	font-weight: 900;
-	font-size: 16px;
+	font-size: 12px;
 	animation: animate 5s gradient infinite;
 	text-decoration: none;
 	text-align: center;
 	color: black;
+}
+
+@media all and (max-width: 425px) {
+	.text b {
+		transform-origin: 0 70.5px;
+		top: 21%;
+		background: linear-gradient(45deg, #2febdc, #eb413b, #ffa300, #e422eb);
+		background-size: 400%;
+		animation: text-gradient 15s ease infinite;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+	}
+}
+
+@keyframes text-gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 /* About Us 

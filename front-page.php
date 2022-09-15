@@ -31,9 +31,10 @@ get_header();
     </script>
 
 </section>
-    <?php the_content(); ?> 
+    
 
 
 
-<?php
+<?php 
+the_content();
 get_footer();
