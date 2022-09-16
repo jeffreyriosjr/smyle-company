@@ -1029,9 +1029,8 @@ textarea {
 }
 
 .main-header .smyle-navbar ul {
-	margin: 0px;
+	margin: 25px;
 	flex-wrap: wrap;
-	flex-direction: column-reverse;
 	align-items: flex-end;
 }
 
@@ -1071,6 +1070,14 @@ textarea {
 	100% {
 		color: #fff;
 		text-shadow: 0 0 10px #03bcf4, 0 0 20px #03b3f4, 0 0 40px #03bcf4, 0 0 80px #03b3f4, 0 0 160px #03bcf4;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.main-navigation.toggled ul {
+		display: flex;
+		align-items: flex-end;
+		flex-direction: column-reverse;
 	}
 }
 

@@ -97,13 +97,12 @@
       filter: invert(46%) sepia(99%) saturate(2071%) hue-rotate(162deg)
         brightness(95%) contrast(102%);
     }
-    .menu-items.toggled ul {  
+    .menu-items.toggled ul {
       display: flex;
     }
     ul {
-      margin: 0px;
+      margin: 25px;
       flex-wrap: wrap;
-      flex-direction: column-reverse;
       align-items: flex-end;
     }
   }
@@ -147,5 +146,13 @@
     color: #fff;
     text-shadow: 0 0 10px #03bcf4, 0 0 20px #03b3f4, 0 0 40px #03bcf4,
       0 0 80px #03b3f4, 0 0 160px #03bcf4;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-navigation.toggled ul {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column-reverse;
   }
 }
