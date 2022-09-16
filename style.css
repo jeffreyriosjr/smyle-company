@@ -940,7 +940,8 @@ textarea {
 	filter: invert(46%) sepia(99%) saturate(2071%) hue-rotate(162deg) brightness(95%) contrast(102%);
 }
 
-.main-header .logo-headers, .main-header .the-a-tag {
+.main-header .logo-headers,
+.main-header .the-a-tag {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -950,12 +951,6 @@ textarea {
 	animation: animate 5s linear infinite;
 	text-decoration: none;
 	text-align: center;
-}
-
-@media all and (max-width: 768px) {
-	.main-header {
-		font-size: 24px;
-	}
 }
 
 @media all and (max-width: 320px) {
@@ -974,7 +969,6 @@ textarea {
 @media all and (max-width: 768px) {
 	.main-header .header-logo-one {
 		font-size: 32px;
-		padding-top: 10px;
 	}
 }
 
@@ -1012,10 +1006,32 @@ textarea {
 
 .main-header .smyle-navbar {
 	display: flex;
-	flex-direction: column;
-	align-content: center;
+	justify-content: end;
+	flex-wrap: wrap;
+}
+
+.main-header .smyle-navbar .menu-items {
+	margin: 10px 10px 10px;
+	animation: animate 5s linear infinite;
+	font-size: 14px;
+	border: 1px;
+	border-style: solid;
+}
+
+.main-header .smyle-navbar .toggle-logo {
+	width: 25px;
+	text-align: center;
+	filter: invert(46%) sepia(99%) saturate(2071%) hue-rotate(162deg) brightness(95%) contrast(102%);
+}
+
+.main-header .smyle-navbar .menu-items.toggled ul {
+	display: flex;
+}
+
+.main-header .smyle-navbar ul {
+	margin: 25px;
+	flex-wrap: wrap;
 	align-items: flex-end;
-	justify-content: center;
 }
 
 @keyframes gradient {
@@ -1054,6 +1070,14 @@ textarea {
 	100% {
 		color: #fff;
 		text-shadow: 0 0 10px #03bcf4, 0 0 20px #03b3f4, 0 0 40px #03bcf4, 0 0 80px #03b3f4, 0 0 160px #03bcf4;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.main-navigation.toggled ul {
+		display: flex;
+		align-items: flex-end;
+		flex-direction: column-reverse;
 	}
 }
 

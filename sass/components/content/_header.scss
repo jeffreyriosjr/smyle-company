@@ -24,11 +24,12 @@
     .blk-wht-logo {
       color: #00b3ff;
       width: 150px;
-      filter: invert(46%) sepia(99%) saturate(2071%) hue-rotate(162deg) brightness(95%) contrast(102%);
-      
+      filter: invert(46%) sepia(99%) saturate(2071%) hue-rotate(162deg)
+        brightness(95%) contrast(102%);
     }
   }
-  .logo-headers, .the-a-tag {
+  .logo-headers,
+  .the-a-tag {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -41,9 +42,6 @@
     text-align: center;
   }
 
-  @media all and (max-width: 768px) {
-    font-size: 24px;
-  }
   @media all and (max-width: 320px) {
     font-size: 18px;
     margin: 25px;
@@ -55,7 +53,6 @@
     width: fit-content;
     @media all and (max-width: 768px) {
       font-size: 32px;
-      padding-top: 10px;
     }
   }
   .header-logo-two {
@@ -84,10 +81,30 @@
 
   .smyle-navbar {
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: flex-end;
-    justify-content: center;
+    justify-content: end;
+    flex-wrap: wrap;
+
+    .menu-items {
+      margin: 10px 10px 10px;
+      animation: animate 5s linear infinite;
+      font-size: 14px;
+      border: 1px;
+      border-style: solid;
+    }
+    .toggle-logo {
+      width: 25px;
+      text-align: center;
+      filter: invert(46%) sepia(99%) saturate(2071%) hue-rotate(162deg)
+        brightness(95%) contrast(102%);
+    }
+    .menu-items.toggled ul {
+      display: flex;
+    }
+    ul {
+      margin: 25px;
+      flex-wrap: wrap;
+      align-items: flex-end;
+    }
   }
 }
 
@@ -129,5 +146,13 @@
     color: #fff;
     text-shadow: 0 0 10px #03bcf4, 0 0 20px #03b3f4, 0 0 40px #03bcf4,
       0 0 80px #03b3f4, 0 0 160px #03bcf4;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-navigation.toggled ul {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column-reverse;
   }
 }

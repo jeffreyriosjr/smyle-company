@@ -42,8 +42,10 @@
 
 
 
-		<nav id="site-navigation" class="smyle-navbar main-navigation">
-			<button class="menu-items menu-toggle mt-3" aria-controls="primary-menu" aria-expanded="false"></button>
+		<nav id="site-navigation" class="smyle-navbar main-navigation navbar-expand-sm">
+			<button class="menu-items navbar-toggler menu-toggle" aria-controls="primary-menu" aria-expanded="false" data-target="#navbarMenu">MENU
+			<!-- <img src="http://smyleco.local/wp-content/uploads/2022/08/cropped-output-onlinepngtools-1.png" class="toggle-logo"> -->
+			</button>
 			<?php
 			wp_nav_menu(
 				array(
