@@ -107,7 +107,8 @@
   animation: animate 5s gradient infinite;
   text-decoration: none;
   text-align: center;
-  color: black;
+  color: white;
+  text-shadow: 1px 3px black;
 
   @media all and (max-width: 425px) {
     transform-origin: 0 70.5px;
