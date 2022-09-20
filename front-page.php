@@ -16,7 +16,7 @@ get_header();
 ?>
 
     <section class="the-body"> 
-     <img src="http://smyleco.local/wp-content/uploads/2022/08/output-onlinepngtools.png"class="the-logo" />
+     <img src="http://smyleco.local/wp-content/uploads/2022/09/001-1.png"class="the-logo" />
        <div class="loader">
         <div class="text">
             <p>Smyle_Co_ A San Diego Based Company -</p>
