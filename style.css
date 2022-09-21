@@ -936,9 +936,12 @@ textarea {
 }
 
 .main-header .smyle-logo .blk-wht-logo {
-	color: #00b3ff;
-	width: 150px;
-	filter: invert(46%) sepia(99%) saturate(2071%) hue-rotate(162deg) brightness(95%) contrast(102%);
+	width: 175px;
+	background: black;
+	border: white 2px;
+	border-radius: 50%;
+	border-style: solid;
+	margin-left: 15px;
 }
 
 .main-header .logo-headers,
@@ -946,12 +949,27 @@ textarea {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	margin: 0px 0px 0px 15px;
-	text-shadow: 0 0 10px #d1da73, 0 0 20px #0a4761, 0 0 40px #00b3ff, 0 0 80px #44cf59, 0 0 120px #aa5181;
-	font-family: "Raleway", cursive;
-	animation: animate 5s linear infinite;
-	text-decoration: none;
-	text-align: center;
+	margin: 0px 0px 0px 30px;
+	background: linear-gradient(-45deg, #a0aae1 0%, #addf70 13%, #d0ced3 25%, #cded18 38%, #11ceef 50%, #f3a469 87%, #f7c978 100%);
+	background-size: 400%;
+	animation: text-gradient 5s ease infinite;
+	padding: 5px 0;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+@keyframes text-gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 @media all and (max-width: 320px) {
