@@ -29,7 +29,7 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'smyle-co' ); ?></a>
 	<header id="masthead" class="site-header">
 	<div class="main-header">
-	<div class="smyle-logo">
+	<div class="smyle-logo btn">
 		<img src="http://smyleco.local/wp-content/uploads/2022/09/smyle-logo-Dec2021-v1-2.png" class="blk-wht-logo">
 	</div>
 	<div class="logo-headers" >

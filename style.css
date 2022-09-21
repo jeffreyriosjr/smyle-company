@@ -950,14 +950,12 @@ textarea {
 	display: flex;
 	flex-direction: column;
 	margin: 0px 0px 0px 30px;
-	background: linear-gradient(-45deg, #a0aae1 0%, #addf70 13%, #d0ced3 25%, #cded18 38%, #11ceef 50%, #f3a469 87%, #f7c978 100%);
+	text-shadow: 0 0 10px #212222, 0 0 20px #00b3ff, 0 0 40px #cbd8d8, 0 0 80px #f7fdff, 0 0 120px #242424;
+	color: white;
+	text-decoration: none;
 	background-size: 400%;
 	animation: text-gradient 5s ease infinite;
 	padding: 5px 0;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
-	text-fill-color: transparent;
 }
 
 @keyframes text-gradient {
