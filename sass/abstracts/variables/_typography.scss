@@ -1,18 +1,32 @@
 @font-face {
-    font-family: 'rebelton-extended', sans-serif;
-    src: url('/assets/fonts/rebelton-extended.ttf');
+    font-family: 'rebelton-extended';
+    src: url('/assets/fonts/rebelton-extended.otf');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'rebelton-light', sans-serif;
+    src: url('/assets/fonts/rebelton-light.otf');
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'rebelton-normal', sans-serif;
+    src: url('/assets/fonts/rebelton-normal.otf');
+    font-style: normal;
+
 }
 
 
 
 
-
 // stylelint-disable value-keyword-case
-$font__main: 'rebelton-extended' sans-serif;
+$font__main: 'rebelton-extended';
 // stylelint-enable value-keyword-case
 $font__code: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
 
-$rebelton_extended: 'rebelton-extended', sans-serif;
+$rebelton_extended: 'rebelton-extended';
+$rebelton_light: 'rebelton-light';
+$rebelton_normal: 'rebelton-normal';

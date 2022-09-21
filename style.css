@@ -51,8 +51,21 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Rubik:wght@300;400&display=swap");
 @font-face {
-	font-family: 'rebelton-extended', sans-serif;
-	src: url("/assets/fonts/rebelton-extended.ttf");
+	font-family: 'rebelton-extended';
+	src: url("/assets/fonts/rebelton-extended.otf");
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'rebelton-light', sans-serif;
+	src: url("/assets/fonts/rebelton-light.otf");
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'rebelton-normal', sans-serif;
+	src: url("/assets/fonts/rebelton-normal.otf");
+	font-style: normal;
 }
 
 /*--------------------------------------------------------------
@@ -395,7 +408,7 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: "rebelton-extended" sans-serif;
+	font-family: "rebelton-extended";
 	font-size: 1rem;
 	line-height: 1.5;
 }
@@ -1006,8 +1019,7 @@ textarea {
 }
 
 .main-header li {
-	font-family: "rebelton-extended", sans-serif;
-	text-transform: uppercase;
+	font-family: "rebelton-light";
 	text-align: right;
 	text-shadow: 0 0 10px #212222, 0 0 20px #00b3ff, 0 0 40px #cbd8d8, 0 0 80px #f7fdff, 0 0 120px #242424;
 	color: white;
