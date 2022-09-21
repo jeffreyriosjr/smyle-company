@@ -1,11 +1,11 @@
 @font-face {
-    font-family: 'rebelton-extended';
+    font-family: 'rebelton-extended' , sans-serif;
     src: url('/assets/fonts/rebelton-extended.otf');
     font-style: normal;
 }
 @font-face {
-    font-family: 'rebelton-light', sans-serif;
-    src: url('/assets/fonts/rebelton-light.otf');
+    font-family: 'rebelton-light-1', sans-serif;
+    src: url('/assets/fonts/rebelton-light-1.ttf');
     font-style: normal;
 
 }
@@ -27,6 +27,6 @@ $font__pre: "Courier 10 Pitch", courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
 
-$rebelton_extended: 'rebelton-extended';
-$rebelton_light: 'rebelton-light';
-$rebelton_normal: 'rebelton-normal';
+$rebelton_extended: 'rebelton-extended', sans-serif;
+$rebelton_light_1: 'rebelton-light-1', sans-serif;
+$rebelton_normal: 'rebelton-normal', sans-serif;
