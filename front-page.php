@@ -15,7 +15,7 @@ get_header();
 
 ?>
 
-    <section class="the-body"> 
+    <!-- <section class="the-body"> 
      <img src="http://smyleco.local/wp-content/uploads/2022/09/001-1.png"class="the-logo" />
        <div class="loader">
         <div class="text">
@@ -30,7 +30,7 @@ get_header();
         `<b style="transform:rotate(${i * 9.5}deg)">${char}</b>`).join(""); 
     </script>
 
-</section>
+</section> -->
     
 
 

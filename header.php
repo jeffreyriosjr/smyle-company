@@ -30,17 +30,8 @@
 	<header id="masthead" class="site-header">
 	<div class="main-header">
 	<div class="smyle-logo btn">
-		<img src="http://smyleco.local/wp-content/uploads/2022/09/smyle-logo-Dec2021-v1-2.png" class="blk-wht-logo">
+	<img src="http://smyleco.local/wp-content/uploads/2022/09/001.png" class="blk-wht-logo">
 	</div>
-	<div class="logo-headers" >
-	<a class="the-a-tag"href="http://smyleco.local/">	
-	<p class="header-logo-one">SMYLE_Co_</p>
-	<p class="header-logo-two"> A SAN DIEGO-BASED SMYLE COMPANY</p>
-	</a>
-	</div>
- 
-
-
 
 		<nav id="site-navigation" class="smyle-navbar main-navigation navbar-expand-sm">
 			<button class="menu-items navbar-toggler menu-toggle" aria-controls="primary-menu" aria-expanded="false" data-target="#navbarMenu">MENU

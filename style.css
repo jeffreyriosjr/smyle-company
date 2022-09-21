@@ -48,6 +48,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Rubik:wght@300;400&display=swap");
+@font-face {
+	font-family: 'REBELTON-Extended';
+	src: url(/assets/REBELTON-Extended.ttf);
+}
+
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -60,8 +67,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Rubik:wght@300;400&display=swap");
 html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
@@ -931,16 +936,8 @@ textarea {
 	animation: gradient 15s ease infinite;
 }
 
-.main-header .smyle-logo {
-	margin: 15px 15px 15px 15px;
-}
-
 .main-header .smyle-logo .blk-wht-logo {
-	width: 175px;
-	background: black;
-	border: white 2px;
-	border-radius: 50%;
-	border-style: solid;
+	width: 375px;
 	margin-left: 15px;
 }
 
@@ -1022,6 +1019,7 @@ textarea {
 }
 
 .main-header .smyle-navbar {
+	height: 100%;
 	display: flex;
 	justify-content: end;
 	flex-wrap: wrap;
