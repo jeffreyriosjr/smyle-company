@@ -30,7 +30,7 @@
 	<header id="masthead" class="site-header">
 	<div class="main-header">
 	<div class="smyle-logo btn">
-	<img src="http://smyleco.local/wp-content/uploads/2022/09/001.png" class="blk-wht-logo">
+	<img src="http://smyleco.local/wp-content/uploads/2022/09/SmyleLogo.png" class="blk-wht-logo">
 	</div>
 
 		<nav id="site-navigation" class="smyle-navbar main-navigation navbar-expand-sm">
