@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Rubik:wght@300;400&display=swap");
-@font-face {
-  font-family: 'rebelton-light-1';
-  src: url('/assets/fonts/rebelton-light-1.ttf');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Oswald:wght@200&family=Qwitcher+Grypen&family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@1,200&family=Oswald:wght@200&family=Qwitcher+Grypen&display=swap');
+.no-italics {
   font-style: normal;
-  font-weight: 100;
 }
+
 .main-header {
   display: flex;
   flex-direction: row;
@@ -26,7 +26,7 @@
   animation: gradient 15s ease infinite;
   .smyle-logo {
     .blk-wht-logo {
-      width:375px;
+      width: 375px;
       margin-left: 15px;
     }
   }
@@ -37,7 +37,8 @@
     display: flex;
     flex-direction: column;
     margin: 0px 0px 0px 30px;
-    text-shadow: 0 0 10px #212222, 0 0 20px #00b3ff, 0 0 40px #cbd8d8, 0 0 80px #f7fdff, 0 0 120px #242424;
+    text-shadow: 0 0 10px #212222, 0 0 20px #00b3ff, 0 0 40px #cbd8d8,
+      0 0 80px #f7fdff, 0 0 120px #242424;
     color: white;
     text-decoration: none;
     background-size: 400%;
@@ -79,8 +80,10 @@
   }
 
   li {
-    font-family: 'rebelton-light-1', sans-serif;
-    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 600;
     text-shadow: 0 0 10px #212222, 0 0 20px #00b3ff, 0 0 40px #cbd8d8,
       0 0 80px #f7fdff, 0 0 120px #242424;
     color: white;

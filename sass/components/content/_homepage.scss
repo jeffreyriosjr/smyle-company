@@ -2,6 +2,7 @@
   position: fixed;
   z-index: 2;
   right: 5%;
+  top: 30%;
 }
 .loader {
   position: relative;
@@ -27,8 +28,8 @@
   }
 }
 .the-logo {
-  top: 25%;
-  left: 25%;
+  top: 23%;
+  left: 24%;
   width: 50%;
   z-index: 2;
   position: absolute;
@@ -80,6 +81,7 @@
 }
 
 .text {
+font-family: 'Montserrat', sans-serif;  text-transform: uppercase;
   position: absolute;
   width: 250px;
   height: 250px;

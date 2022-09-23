@@ -15,8 +15,8 @@ get_header();
 
 ?>
 
-    <!-- <section class="the-body"> 
-     <img src="http://smyleco.local/wp-content/uploads/2022/09/001-1.png"class="the-logo" />
+    <section class="the-body"> 
+     <img src="http://smyleco.local/wp-content/uploads/2022/09/SmyleLogo.png"class="the-logo" />
        <div class="loader">
         <div class="text">
             <p>Smyle_Co_ A San Diego Based Company -</p>
@@ -29,8 +29,7 @@ get_header();
         text.innerHTML = text.innerText.split("").map((char,i) => 
         `<b style="transform:rotate(${i * 9.5}deg)">${char}</b>`).join(""); 
     </script>
-
-</section> -->
+</section>
     
 
 
