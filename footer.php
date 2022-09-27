@@ -14,15 +14,11 @@
 
 <footer id="colophon" class="site-footer"> 
 
-  <div class="body-footer container-fluid">
-    <h1 class="footer-header">Follow Us</h1>
+  <div class="body-footer container">
+    <h1 class="footer-header">Follow the <span><img src="http://smyleco.local/wp-content/uploads/2022/09/SmyleLogo-2.png" class="footer-logo"></span></h1>
     <div class="container p-4 pb-0 text-center">
       <!-- Section: Social media -->
-      
-        
- 
-        
-      
+
       <!-- Section: Social media -->
 
       <div class="footer-all row">
