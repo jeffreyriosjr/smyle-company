@@ -29,11 +29,9 @@ get_header();
         text.innerHTML = text.innerText.split("").map((char,i) => 
         `<b style="transform:rotate(${i * 9.5}deg)">${char}</b>`).join(""); 
     </script>
-</section>
     
-
-
-
+</section>
+ 
 <?php 
 the_content();
 get_footer();

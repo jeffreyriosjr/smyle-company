@@ -816,12 +816,25 @@ textarea {
 }
 
 .the-logo {
-	top: 23%;
-	left: 24%;
+	top: 25%;
+	left: 25%;
 	width: 50%;
 	z-index: 2;
 	position: absolute;
 	border-radius: 50%;
+	animation: coin-rotate 5s infinite;
+}
+
+@keyframes coin-rotate {
+	0% {
+		transform: rotateY(180deg0);
+	}
+	50% {
+		transform: rotateY(360deg);
+	}
+	100% {
+		transform: rotateY(0deg);
+	}
 }
 
 .loader span::before {
@@ -899,7 +912,7 @@ textarea {
 
 .text b {
 	position: absolute;
-	left: 52%;
+	left: 50%;
 	display: block;
 	transform-origin: 0 125px;
 	font-weight: 900;
