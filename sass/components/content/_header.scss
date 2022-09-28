@@ -103,11 +103,13 @@
     flex-wrap: wrap;
 
     .menu-items {
-      margin: 10px 10px 10px;
+      margin: 20px 10px;
       animation: animate 5s linear infinite;
       font-size: 14px;
       border: 1px;
-      border-style: solid;
+      border-style: groove;
+      border-radius: 10%;
+      font-family: 'Montserrat';
     }
     .toggle-logo {
       width: 25px;
@@ -122,6 +124,9 @@
       margin: 25px;
       flex-wrap: wrap;
       align-items: flex-end;
+      @media screen and (max-width: 425px) {
+        margin: 0px;
+      }
     }
   }
 }
@@ -148,7 +153,7 @@
   80%,
   90.1%,
   92% {
-    color: #0e3742;
+    color: #c7dfe6;
     text-shadow: none;
   }
 

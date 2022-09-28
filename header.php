@@ -19,8 +19,8 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Oswald:wght@200&family=Qwitcher+Grypen&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Oswald:wght@200&family=Qwitcher+Grypen&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/ba414641d6.js" crossorigin="anonymous"></script>
 
 	<?php wp_head(); ?>
@@ -33,11 +33,12 @@
 	<header id="masthead" class="site-header">
 	<div class="main-header">
 	<div class="smyle-logo btn">
-	<img src="http://smyleco.local/wp-content/uploads/2022/09/SmyleLogo-2.png" class="blk-wht-logo">
+	<a href="http://smyleco.local/">	
+	<img src="http://smyleco.local/wp-content/uploads/2022/09/SmyleLogo-2.png" class="blk-wht-logo"></a>
 	</div>
 
 		<nav id="site-navigation" class="smyle-navbar main-navigation navbar-expand-sm">
-			<button class="menu-items navbar-toggler menu-toggle" aria-controls="primary-menu" aria-expanded="false" data-target="#home">MENU
+			<button class="menu-items navbar-toggler menu-toggle" aria-controls="primary-menu" aria-expanded="false" data-target="#home">SMYLE<br>HERE
 			<!-- <img src="http://smyleco.local/wp-content/uploads/2022/08/cropped-output-onlinepngtools-1.png" class="toggle-logo"> -->
 			</button>
 			<?php

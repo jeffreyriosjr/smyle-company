@@ -789,6 +789,12 @@ textarea {
 	top: 30%;
 }
 
+@media all and (max-width: 525px) {
+	.the-body {
+		display: none;
+	}
+}
+
 .loader {
 	position: relative;
 	display: flex;
@@ -1063,11 +1069,13 @@ textarea {
 }
 
 .main-header .smyle-navbar .menu-items {
-	margin: 10px 10px 10px;
+	margin: 20px 10px;
 	animation: animate 5s linear infinite;
 	font-size: 14px;
 	border: 1px;
-	border-style: solid;
+	border-style: groove;
+	border-radius: 10%;
+	font-family: 'Montserrat';
 }
 
 .main-header .smyle-navbar .toggle-logo {
@@ -1084,6 +1092,12 @@ textarea {
 	margin: 25px;
 	flex-wrap: wrap;
 	align-items: flex-end;
+}
+
+@media screen and (max-width: 425px) {
+	.main-header .smyle-navbar ul {
+		margin: 0px;
+	}
 }
 
 @keyframes gradient {
@@ -1108,7 +1122,7 @@ textarea {
 	80%,
 	90.1%,
 	92% {
-		color: #0e3742;
+		color: #c7dfe6;
 		text-shadow: none;
 	}
 	18.1%,
