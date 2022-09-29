@@ -958,6 +958,12 @@ textarea {
 
 /* About Us 
 --------------------------------------------- */
+/* Our Product 
+--------------------------------------------- */
+.main {
+	width: 100%;
+}
+
 /* Contact Us
 --------------------------------------------- */
 /* Gummy Gallery
@@ -1156,7 +1162,7 @@ textarea {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: auto;
+	height: 300px;
 }
 
 .site-footer .footer-header {

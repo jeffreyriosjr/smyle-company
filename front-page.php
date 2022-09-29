@@ -10,13 +10,17 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package smyle_co_
+ * 
+ *  *  * Template Name: front-page Template
+ * 
  */
 get_header();
 
 ?>
 
+<main id="primary" class="site-main">
     <section class="the-body"> 
-     <img src="http://smyleco.local/wp-content/uploads/2022/09/SmyleLogo.png"class="the-logo" />
+     <a href="#"><img src="http://smyleco.local/wp-content/uploads/2022/09/SmyleLogo.png"class="the-logo" /></a>
        <div class="loader">
         <div class="text">
             <p>Smyle_Co_ A San Diego Based Company -</p>
@@ -31,7 +35,7 @@ get_header();
     </script>
     
 </section>
- 
+</main>
 <?php 
 the_content();
 get_footer();
