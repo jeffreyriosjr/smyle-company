@@ -11,9 +11,17 @@
  *
  * @package smyle_co_
  * 
- *  *  * Template Name: Our-product Template
+ *  *  * Template Name: Our Product Template
  * 
  */
 get_header();
-
 ?>
+
+<main id="our-product" class="our-product">
+<div class="container">
+   
+</div>
+</main>
+<?php 
+the_content();
+get_footer();
