@@ -37,9 +37,8 @@
 	<img src="http://smyleco.local/wp-content/uploads/2022/09/SmyleLogo-2.png" class="blk-wht-logo"></a>
 	</div>
 
-		<nav id="site-navigation" class="smyle-navbar main-navigation navbar-expand-sm">
+		<nav id="site-navigation" class="smyle-navbar main-navigation navbar-expand-sm pt-3">
 			<button class="menu-items navbar-toggler menu-toggle" aria-controls="primary-menu" aria-expanded="false" data-target="#home">SMYLE<br>HERE
-			<!-- <img src="http://smyleco.local/wp-content/uploads/2022/08/cropped-output-onlinepngtools-1.png" class="toggle-logo"> -->
 			</button>
 			<?php
 			wp_nav_menu(

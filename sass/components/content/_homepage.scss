@@ -2,11 +2,7 @@
   position: fixed;
   z-index: 2;
   right: 5%;
-  top: 30%;
-
-  @media all and (max-width: 525px) {
-    display: none;
-  }
+  top: 20%;
 }
 .loader {
   position: relative;
@@ -14,6 +10,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
+  @media all and (max-width: 868px) {
+    display: none;
+  }
 }
 .loader span {
   position: relative;
@@ -38,9 +38,7 @@
   z-index: 2;
   position: absolute;
   border-radius: 50%;
-  
     animation: coin-rotate 5s infinite;
-  
   @keyframes coin-rotate {
     0% {
       transform: rotateY(180deg0);

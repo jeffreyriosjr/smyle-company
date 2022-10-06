@@ -786,13 +786,7 @@ textarea {
 	position: fixed;
 	z-index: 2;
 	right: 5%;
-	top: 30%;
-}
-
-@media all and (max-width: 525px) {
-	.the-body {
-		display: none;
-	}
+	top: 20%;
 }
 
 .loader {
@@ -801,6 +795,12 @@ textarea {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+@media all and (max-width: 868px) {
+	.loader {
+		display: none;
+	}
 }
 
 .loader span {
