@@ -6,7 +6,7 @@
     #fdfcff 25%,
     #0991a1 38%,
     #edf9fb 50%,
-    #ff5b97 62%,
+    #34b900 62%,
     #f18271 75%,
     white 100%
   );
@@ -124,10 +124,10 @@
     background: var(--instagram);
   }
   ul li:hover:nth-child(2) a::before {
-    background: #e4506b;
+    background: #bae450;
   }
   ul li:hover:nth-child(2) a::after {
-    background: #e76a7a;
+    background: #aceebd;
   }
   ul li:hover:nth-child(3) a {
     background: var(--twitter);
