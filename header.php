@@ -33,8 +33,8 @@
 	<header id="masthead" class="site-header">
 	<div class="main-header">
 	<div class="smyle-logo btn">
-	<a href="http://smyleco.local/">	
-	<img src="http://smyleco.local/wp-content/uploads/2022/09/SmyleLogo-2.png" class="blk-wht-logo"></a>
+	<a href="http://smyleco.wpenginepowered.com/">	
+	<img src="http://smyleco.wpenginepowered.com/wp-content/uploads/2022/09/SmyleLogo-2.png" class="blk-wht-logo"></a>
 	</div>
 
 		<nav id="site-navigation" class="smyle-navbar main-navigation navbar-expand-sm pt-3">

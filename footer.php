@@ -15,7 +15,7 @@
 <footer id="colophon" class="site-footer"> 
 
   <div class="body-footer container">
-    <h1 class="footer-header">Follow the<span><a href="http://smyleco.local/"><img src="http://smyleco.local/wp-content/uploads/2022/09/SmyleLogo-2.png" class="footer-logo"></a></span></h1>
+    <h1 class="footer-header">Follow the<span><a href="http://smyleco.wpenginepowered.com/"><img src="http://smyleco.wpenginepowered.com/wp-content/uploads/2022/09/SmyleLogo-2.png" class="footer-logo"></a></span></h1>
     <div class="container p-4 pb-0 text-center">
       <!-- Section: Social media -->
 

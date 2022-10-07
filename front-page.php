@@ -20,7 +20,7 @@ get_header();
 
 <main id="primary" class="site-main">
     <section class="the-body"> 
-     <a href="#"><img src="http://smyleco.local/wp-content/uploads/2022/09/SmyleLogo.png"class="the-logo" /></a>
+     <a href="#"><img src="http://smyleco.wpenginepowered.com/wp-content/uploads/2022/09/SmyleLogo.png"class="the-logo" /></a>
        <div class="loader">
         <div class="text">
             <p>Smyle_Co_ A San Diego Based Company -</p>
