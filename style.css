@@ -797,12 +797,6 @@ textarea {
 	align-items: center;
 }
 
-@media all and (max-width: 1023px) {
-	.loader {
-		display: none;
-	}
-}
-
 .loader span {
 	position: relative;
 	width: 200px;
