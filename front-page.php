@@ -14,14 +14,12 @@
  *  *  * Template Name: front-page Template
  * 
  */
-
 get_header();
 
 ?>
 
 <main id="primary" class="site-main">
-    <!-- <section class="the-body"> 
-        hello!!
+    <section class="the-body"> 
      <a href="#"><img src="http://smyleco.wpenginepowered.com/wp-content/uploads/2022/09/SmyleLogo.png"class="the-logo" /></a>
        <div class="loader">
         <div class="text">
@@ -36,7 +34,7 @@ get_header();
         `<b style="transform:rotate(${i * 9.5}deg)">${char}</b>`).join(""); 
     </script>
     
-</section> -->
+</section>
 </main>
 <?php 
 the_content();
