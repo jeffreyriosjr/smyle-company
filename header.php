@@ -33,7 +33,7 @@
 	<header id="masthead" class="site-header">
 	<div class="main-header">
 	<div class="smyle-logo btn">
-	<a href="http://smyleco-sd.com">	
+	<a href="http://smyle-sd.com">	
 	<img src="https://smyle-sd.com/wp-content/uploads/2022/10/smyleLogo.png" class="blk-wht-logo"></a>
 	</div>
 
