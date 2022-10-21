@@ -61,7 +61,7 @@
   }
   ul li a .fab {
     font-size: 40px;
-    color: rgb(165, 235, 238) !important;
+    color: rgb(19, 23, 23) !important;
     line-height: 80px;
     transition: 0.5s;
     @media all and (max-width: 678px) {
@@ -74,7 +74,6 @@
     width: 80px;
     height: 80px;
     text-align: center;
-    background-color: #8cd7cc;
     transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
     transition: 0.5s;
     box-shadow: -30px 30px 10px rgba(0, 0, 0, 0.5);
@@ -90,7 +89,7 @@
     left: -20px;
     height: 100%;
     width: 20px;
-    background-color: #0b98b4;
+    background-color: #0c1416;
     transition: 0.5s;
     transform: rotate(0deg) skewY(-45deg);
   }
@@ -119,16 +118,16 @@
     background: var(--facebook);
   }
   ul li:hover:nth-child(1) a::before {
-    background: #5e77ab;
+    background: #dcdee3;
   }
   ul li:hover:nth-child(1) a::after {
-    background: #4c68a2;
+    background: #b6bac0;
   }
   ul li:hover:nth-child(2) a {
     background: var(--instagram);
   }
   ul li:hover:nth-child(2) a::before {
-    background: #bae450;
+    background:#dcdee3;
   }
   ul li:hover:nth-child(2) a::after {
     background: #aceebd;
