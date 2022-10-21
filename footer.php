@@ -14,31 +14,31 @@
 
 <footer id="colophon" class="site-footer"> 
 
-  <div class="body-footer container">
-    <h1 class="footer-header">Follow the<span><a href="http://smyle-sd.com/"><img src="https://smyle-sd.com/wp-content/uploads/2022/10/smyleLogo.png" class="footer-logo"></a></span></h1>
-    <div class="container p-4 pb-0 text-center">
-      <!-- Section: Social media -->
-
-      <!-- Section: Social media -->
-
-      <div class="footer-all row">
-      <ul class="icon-section">
-      <li class="icon-links"><a href="https://www.facebook.com/SMYLE-Co-101844815983658/"><i class="fab fa-facebook-f"></i></a></li>
-      <li class="icon-links"><a href="https://www.instagram.com/smyle_co_/"><i class="fab fa-instagram"></i></a></li>
-      <li class="icon-links"><a href="https://www.instagram.com/smyle_co_/"><i class="fab fa-twitter"></i></a></li>
-      <li class="icon-links"><a href="https://www.instagram.com/smyle_co_/"><i class="fab fa-apple"></i></a></li>
-    </ul>
-        <?php if (has_nav_menu('footer-community-menu')) : ?>
-          <div class="col-lg-6">
-            <?php
-            wp_nav_menu(array(
-              'theme_location' => 'footer-community-menu',
-              'container' => 'ul',
-              'menu_class' => 'nav',
-            ));
-            ?>
+  <div class="body-footer">
+    <div class="header">
+    <h1 class="footer-header mb-0">Follow the<span><a href="http://smyle-sd.com/">
+      <img src="https://smyle-sd.com/wp-content/uploads/2022/10/smyleLogo.png" class="footer-logo"></a></span></h1>
+    </div>
+    <div class="all-logos text-center row d-flex">
+      <div class="footer-all col">
+          <ul class="icon-section">
+            <li class="icon-links">
+                <a href="https://www.facebook.com/SMYLE-Co-101844815983658/">
+              <i class="fab fa-facebook-f"></i></a></li>
+            <li class="icon-links">
+              <a href="https://www.instagram.com/smyle_co_/">
+                <i class="fab fa-instagram"></i></a></li>
+          </ul>
           </div>
-      </div>
+
+          <div class="col">
+            <img src="https://smyle-sd.com/wp-content/uploads/2022/10/SMYLE-15-1-e1666137420775-1.png" alt="" class="footer-right-logo">    
+        </div>
+          </div>
+
+          <?php if (has_nav_menu('footer-community-menu')) : ?>
+         
+      
     <?php endif; ?>
     </div>
 </footer><!-- #colophon -->
