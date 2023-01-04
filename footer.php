@@ -19,7 +19,7 @@
     <h1 class="footer-header mb-0">Follow the<span><a href="http://smyle-sd.com/">
       <img src="https://smyle-sd.com/wp-content/uploads/2022/10/smyleLogo.png" class="footer-logo"></a></span></h1>
     </div>
-    <div class="all-logos text-center row d-flex">
+    <div class="all-logos text-center d-flex container">
       <div class="footer-all col">
           <ul class="icon-section">
             <li class="icon-links">
@@ -31,7 +31,7 @@
           </ul>
           </div>
 
-          <div class="col">
+          <div class="col container">
             <img src="https://smyle-sd.com/wp-content/uploads/2022/10/SMYLE-15-1-e1666137420775-1.png" alt="" class="footer-right-logo">    
         </div>
           </div>
