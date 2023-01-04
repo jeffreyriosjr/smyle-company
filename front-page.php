@@ -19,8 +19,7 @@ get_header();
 ?>
 
 <main id="primary" class="site-main">
-    hello jeff
-     <section class="the-body"> 
+    <!-- <section class="the-body"> 
      <a href="#"><img src="http://smyleco.wpenginepowered.com/wp-content/uploads/2022/09/SmyleLogo.png"class="the-logo" /></a>
        <div class="loader">
         <div class="text">
