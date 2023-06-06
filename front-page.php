@@ -32,9 +32,9 @@ get_header();
         let text = document.querySelector('.text p');
         text.innerHTML = text.innerText.split("").map((char,i) => 
         `<b style="transform:rotate(${i * 9.5}deg)">${char}</b>`).join(""); 
-    </script> -->
+    </script>
     
-</section>
+</section> -->
 </main>
 <?php 
 the_content();

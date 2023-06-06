@@ -2,28 +2,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Rubik:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Oswald:wght@200&family=Qwitcher+Grypen&family=Roboto&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@1,200&family=Oswald:wght@200&family=Qwitcher+Grypen&display=swap');
+
 .no-italics {
   font-style: normal;
+}
+
+.news-update {
+  font-size: 18px;
+  color: #f7fdff;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #242424;
+  border-width: 1px;
+}
+
+.modal-content {
+  background-color: currentColor;
+  margin-top: 5em;
 }
 
 .main-header {
   display: flex;
   flex-direction: row;
   padding: 0;
-  background: linear-gradient(
-    -45deg,
-    #a0aae1 0%,
-    #addf70 13%,
-    #d0ced3 25%,
-    #cded18 38%,
-    #11ceef 50%,
-    #b7ec72 62%,
-    #f18271 75%,
-    #f3a469 87%,
-    #f7c978 100%
-  );
+  background: linear-gradient(-45deg,
+      #a0aae1 0%,
+      #addf70 13%,
+      #d0ced3 25%,
+      #cded18 38%,
+      #11ceef 50%,
+      #b7ec72 62%,
+      #f18271 75%,
+      #f3a469 87%,
+      #f7c978 100%);
   background-size: 250% 250%;
-  // animation: gradient 15s ease infinite;
+
   .smyle-logo {
     .blk-wht-logo {
       width: 375px;
@@ -44,35 +56,43 @@
     background-size: 400%;
     // animation: text-gradient 5s ease infinite;
     padding: 5px 0;
+
     @keyframes text-gradient {
       0% {
         background-position: 0% 50%;
       }
+
       50% {
         background-position: 100% 50%;
       }
+
       100% {
         background-position: 0% 50%;
       }
     }
   }
 
-  @media all and (max-width: 320px) {
-    font-size: 18px;
+  @media all and (max-width: 390px) {
+    display: flex;
+    height: 75px;
+
   }
 
   .header-logo-one {
     margin: 0px 0px 0px 25px;
     font-size: 44px;
     width: fit-content;
+
     @media all and (max-width: 768px) {
       font-size: 32px;
     }
   }
+
   .header-logo-two {
     margin: -10px -25px;
     font-size: 18px;
     width: max-content;
+
     @media all and (max-width: 768px) {
       font-size: 14px;
     }
@@ -86,9 +106,11 @@
     text-shadow: 0 0 10px #212222, 0 0 20px #00b3ff, 0 0 40px #cbd8d8,
       0 0 80px #f7fdff, 0 0 120px #242424;
     color: white;
+
     @media all and (max-width: 1084px) {
       font-size: 14px;
     }
+
     @media all and (max-width: 768px) {
       font-size: 14px;
       margin: 2px;
@@ -96,7 +118,7 @@
   }
 
   .smyle-navbar {
-    height: 100%;
+    padding-top: 1em;
     display: flex;
     justify-content: end;
     flex-wrap: wrap;
@@ -110,19 +132,22 @@
       border-radius: 10%;
       font-family: 'Montserrat';
     }
+
     .toggle-logo {
       width: 25px;
       text-align: center;
-      filter: invert(46%) sepia(99%) saturate(2071%) hue-rotate(162deg)
-        brightness(95%) contrast(102%);
+      filter: invert(46%) sepia(99%) saturate(2071%) hue-rotate(162deg) brightness(95%) contrast(102%);
     }
+
     .menu-items.toggled ul {
       display: flex;
     }
+
     ul {
       margin: 25px;
       flex-wrap: wrap;
       align-items: flex-end;
+
       @media screen and (max-width: 425px) {
         margin: 0px;
       }
@@ -134,15 +159,18 @@
   0% {
     background-position: 0%;
   }
+
   50% {
     background-position: 100%;
   }
+
   100% {
     background-position: 0%;
   }
 }
 
 @keyframes animate {
+
   0%,
   18%,
   20%,
@@ -176,5 +204,11 @@
     display: flex;
     align-items: flex-end;
     flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-header .smyle-navbar {
+    padding-top: 0;
   }
 }

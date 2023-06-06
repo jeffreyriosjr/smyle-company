@@ -12,42 +12,83 @@
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
+
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Oswald:wght@200&family=Qwitcher+Grypen&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Oswald:wght@200&family=Qwitcher+Grypen&display=swap"
+		rel="stylesheet">
 	<script src="https://kit.fontawesome.com/ba414641d6.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+		integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+		integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+		crossorigin="anonymous"></script>
 
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'smyle-co' ); ?></a>
-	<header id="masthead" class="site-header">
-	<div class="main-header">
-	<div class="smyle-logo btn">
-	<a href="http://smyle-sd.com">	
-	<img src="https://smyle-sd.com/wp-content/uploads/2022/10/smyleLogo.png" class="blk-wht-logo"></a>
-	</div>
+	<?php wp_body_open(); ?>
+	<div id="page" class="site">
+		<a class="skip-link screen-reader-text" href="#primary">
+			<?php esc_html_e('Skip to content', 'smyle-co'); ?>
+		</a>
+		<header id="masthead" class="site-header">
+			<div class="main-header">
+				<div class="smyle-logo btn">
+					<a href="http://smyle-sd.com">
+						<img src="https://smyle-sd.com/wp-content/uploads/2022/10/smyleLogo.png"
+							class="blk-wht-logo"></a>
+				</div>
 
-		<nav id="site-navigation" class="smyle-navbar main-navigation navbar-expand-sm pt-3">
-			<button class="menu-items navbar-toggler menu-toggle" aria-controls="primary-menu" aria-expanded="false" data-target="#home">SMYLE<br>HERE
-			</button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav>
-		</div><!-- #site-navigation -->
-	</header><!-- #masthead -->
+				<nav id="site-navigation" class="smyle-navbar main-navigation navbar-expand-sm">
+					<button class="menu-items navbar-toggler menu-toggle" aria-controls="primary-menu"
+						aria-expanded="false" data-target="#home">SMYLE<br>HERE
+					</button>
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'menu-1',
+							'menu_id' => 'primary-menu',
+						)
+					);
+					?>
+				</nav>
+			</div><!-- #site-navigation -->
+			<div class="news-btn container text-center mt-2">
+				<!-- Button trigger modal -->
+				<button type="button" class="news-update btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+					BIG EXCITING NEWS HERE!
+				</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+					tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content text-center">
+							<div class="modal-header">
+								<h3 class="modal-title w-100" id="staticBackdropLabel">WE DID IT!</h3>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"
+									aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<img class="award-image" src="https://smyle-sd.com/wp-content/uploads/2023/06/349114437_614295234000921_2729918911355567423_n.jpg" alt="smyle image of award">
+								<h3>Our very own Smyle_Co_ gummy "North Park Cherry Punch" officially won the award for "Best Flavor" at the "Farmer's Cup" award ceremony for the "People's Choice Awards"!</h3>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header><!-- #masthead -->
