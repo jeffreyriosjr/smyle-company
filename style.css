@@ -1173,6 +1173,15 @@ textarea {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 180px;
+}
+
+.site-footer .body-footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
 }
 
 .site-footer .footer-header {
@@ -1196,7 +1205,8 @@ textarea {
 }
 
 .site-footer .footer-right-logo {
-	width: 375px;
+	width: 225px !important;
+	margin: 0em 0em 1em !important;
 }
 
 .site-footer ul {
@@ -1214,7 +1224,7 @@ textarea {
 
 .site-footer ul li {
 	list-style: none;
-	margin: 0 40px;
+	margin: 0px 25px -15px 15px;
 }
 
 @media all and (max-width: 678px) {
@@ -1225,9 +1235,9 @@ textarea {
 }
 
 .site-footer ul li a .fab {
-	font-size: 40px;
+	font-size: 30px;
 	color: #131717 !important;
-	line-height: 80px;
+	line-height: 50px;
 	transition: 0.5s;
 }
 
@@ -1240,8 +1250,8 @@ textarea {
 .site-footer ul li a {
 	position: relative;
 	display: block;
-	width: 80px;
-	height: 80px;
+	width: 50px;
+	height: 51px;
 	text-align: center;
 	transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
 	transition: 0.5s;
@@ -1250,8 +1260,8 @@ textarea {
 
 @media all and (max-width: 678px) {
 	.site-footer ul li a {
-		width: 55px;
-		height: 55px;
+		width: 35px;
+		height: 35px;
 	}
 }
 
@@ -1349,6 +1359,25 @@ textarea {
 	}
 	.fab {
 		font-size: 18px;
+	}
+}
+
+@media all and (max-width: 575px) {
+	.body-footer {
+		flex-direction: row-reverse;
+	}
+	.site-footer {
+		height: 120px;
+	}
+	.footer-logo {
+		width: 80%;
+	}
+	.header {
+		width: 65%;
+	}
+	ul li {
+		margin: 0px 10px !important;
+		width: auto !important;
 	}
 }
 
