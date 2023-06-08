@@ -1019,10 +1019,9 @@ textarea {
 	}
 }
 
-@media all and (max-width: 390px) {
+@media all and (max-width: 425px) {
 	.main-header {
 		display: flex;
-		height: 75px;
 	}
 }
 

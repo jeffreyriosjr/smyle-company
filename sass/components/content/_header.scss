@@ -54,7 +54,6 @@
     color: white;
     text-decoration: none;
     background-size: 400%;
-    // animation: text-gradient 5s ease infinite;
     padding: 5px 0;
 
     @keyframes text-gradient {
@@ -72,10 +71,9 @@
     }
   }
 
-  @media all and (max-width: 390px) {
+  @media all and (max-width: 425px) {
     display: flex;
-    height: 75px;
-
+    // height: 75px;
   }
 
   .header-logo-one {
