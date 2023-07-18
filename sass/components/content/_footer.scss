@@ -1,13 +1,14 @@
 .site-footer {
-  background: linear-gradient(-45deg,
-      #ccd1ef 0%,
-      #f5f6f7 13%,
-      #fdfcff 25%,
-      #0991a1 38%,
-      #edf9fb 50%,
-      #34b900 62%,
-      #f18271 75%,
-      white 100%);
+  background-color: black;
+  // background: linear-gradient(-45deg,
+  //     #ccd1ef 0%,
+  //     #f5f6f7 13%,
+  //     #fdfcff 25%,
+  //     #0991a1 38%,
+  //     #edf9fb 50%,
+  //     #34b900 62%,
+  //     #f18271 75%,
+  //     white 100%);
   background-size: 400% 400%;
   animation: gradient 20s ease infinite;
   display: flex;
@@ -74,7 +75,7 @@
 
   ul li a .fab {
     font-size: 30px;
-    color: rgb(19, 23, 23) !important;
+    color: white !important;
     line-height: 50px;
     transition: 0.5s;
 
@@ -106,7 +107,7 @@
     left: -20px;
     height: 100%;
     width: 20px;
-    background-color: #0c1416;
+    background-color: #f1f5f7;
     transition: 0.5s;
     transform: rotate(0deg) skewY(-45deg);
   }
@@ -173,7 +174,7 @@
   }
 
   ul li:hover:nth-child(4) a::before {
-    background: #171717;
+    background: #ffffff;
   }
 
   ul li:hover:nth-child(4) a::after {

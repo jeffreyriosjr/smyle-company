@@ -44,6 +44,17 @@
     <?php endif; ?>
   </div>
 </footer><!-- #colophon -->
+
+<!-- Copyright -->
+<div class="text-center mt-3">
+  © 2023 Copyright:
+  <p>
+    <a href="https://jeffreyriosjr.info/" class="text-black">jeffreyriosjr.info</a>
+  </p>
+
+</div>
+<!-- Copyright -->
+</footer>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
