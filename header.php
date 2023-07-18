@@ -64,14 +64,14 @@
 					?>
 				</nav>
 			</div><!-- #site-navigation -->
-			<div class="news-btn container text-center mt-2">
-				<!-- Button trigger modal -->
-				<button type="button" class="news-update btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+			<!-- <div class="news-btn container text-center mt-2">
+				 Button trigger modal -->
+				<!-- <button type="button" class="news-update btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
 					BIG EXCITING NEWS HERE!
-				</button>
+				</button> -->
 
 				<!-- Modal -->
-				<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+				<!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
 					tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
 					<div class="modal-dialog">
 						<div class="modal-content text-center">
@@ -89,6 +89,6 @@
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
+				</div> -->
+			</div> 
 		</header><!-- #masthead -->
