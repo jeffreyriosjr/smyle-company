@@ -965,7 +965,6 @@ textarea {
 	display: flex;
 	flex-direction: row;
 	padding: 0;
-	background-color: black;
 }
 
 .main-header .smyle-logo .blk-wht-logo {
@@ -1033,8 +1032,7 @@ textarea {
 	text-transform: uppercase;
 	font-style: normal;
 	font-weight: 600;
-	text-shadow: 0 0 10px #212222, 0 0 20px #00b3ff, 0 0 40px #cbd8d8, 0 0 80px #f7fdff, 0 0 120px #242424;
-	color: white;
+	color: black;
 }
 
 @media all and (max-width: 1084px) {
@@ -1147,7 +1145,6 @@ textarea {
 /* Footer
 --------------------------------------------- */
 .site-footer {
-	background-color: black;
 	background-size: 400% 400%;
 	animation: gradient 20s ease infinite;
 	display: flex;
@@ -1216,7 +1213,7 @@ textarea {
 
 .site-footer ul li a .fab {
 	font-size: 30px;
-	color: white !important;
+	color: black !important;
 	line-height: 50px;
 	transition: 0.5s;
 }

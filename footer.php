@@ -8,6 +8,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package smyle_co_
+ * *  *  * Template Name: Footer Template
  */
 
 ?>
