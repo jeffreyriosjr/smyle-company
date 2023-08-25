@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Rubik:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Oswald:wght@200&family=Qwitcher+Grypen&family=Roboto&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@1,200&family=Oswald:wght@200&family=Qwitcher+Grypen&display=swap');
+// @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Rubik:wght@300;400&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Oswald:wght@200&family=Qwitcher+Grypen&family=Roboto&display=swap");
+// @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@1,200&family=Oswald:wght@200&family=Qwitcher+Grypen&display=swap');
 
 .no-italics {
   font-style: normal;
@@ -26,33 +26,6 @@
 
   }
 
-  .logo-headers,
-  .the-a-tag {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 0px 0px 0px 30px;
-    text-shadow: 0 0 10px #212222, 0 0 20px #00b3ff, 0 0 40px #cbd8d8,
-      0 0 80px #f7fdff, 0 0 120px #242424;
-    color: white;
-    text-decoration: none;
-    background-size: 400%;
-    padding: 5px 0;
-
-    @keyframes text-gradient {
-      0% {
-        background-position: 0% 50%;
-      }
-
-      50% {
-        background-position: 100% 50%;
-      }
-
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-  }
 
   @media all and (max-width: 425px) {
     display: flex;
@@ -145,36 +118,6 @@
 
   100% {
     background-position: 0%;
-  }
-}
-
-@keyframes animate {
-
-  0%,
-  18%,
-  20%,
-  50.1%,
-  60%,
-  65.1%,
-  80%,
-  90.1%,
-  92% {
-    color: #c7dfe6;
-    text-shadow: none;
-  }
-
-  18.1%,
-  20.1%,
-  20%,
-  50%,
-  60.1%,
-  80.1%,
-  90%,
-  92.1%,
-  100% {
-    color: #fff;
-    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03b3f4, 0 0 40px #03bcf4,
-      0 0 80px #03b3f4, 0 0 160px #03bcf4;
   }
 }
 
