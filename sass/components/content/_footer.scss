@@ -66,11 +66,11 @@
   ul li a .fab {
     font-size: 30px;
     color: black !important;
-    line-height: 50px;
+    line-height: 53px;
     transition: 0.5s;
 
     @media all and (max-width: 678px) {
-      margin: -15px;
+      margin: -12px;
     }
   }
 
@@ -85,8 +85,8 @@
     box-shadow: -30px 30px 10px rgba(0, 0, 0, 0.5);
 
     @media all and (max-width: 678px) {
-      width: 35px;
-      height: 35px;
+      width: 30px;
+      height: 30px;
     }
   }
 
@@ -209,7 +209,7 @@
   }
 
   ul li {
-    margin: 0px 10px !important;
+    margin: 15px !important;
     width: auto !important;
   }
 }
