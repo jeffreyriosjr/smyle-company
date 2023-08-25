@@ -48,7 +48,7 @@
 			<div class="main-header">
 				<div class="smyle-logo btn">
 					<a href="http://smyle-sd.com">
-						<img src="https://smyle-sd.com/wp-content/uploads/2022/10/smyleLogo.png"
+						<img src="https://smyleco.local/wp-content/uploads/2022/08/output-onlinepngtools-2-e1670482796363.png"
 							class="blk-wht-logo"></a>
 				</div>
 

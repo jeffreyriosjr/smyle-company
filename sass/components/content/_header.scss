@@ -15,8 +15,15 @@
   .smyle-logo {
     .blk-wht-logo {
       width: 375px;
+      padding: 1em;
       margin-left: 15px;
     }
+
+    @media only screen and (max-width: 425px) {
+      padding: 0.5em !important;
+      margin-left: 0px !important;
+    }
+
   }
 
   .logo-headers,
@@ -49,7 +56,6 @@
 
   @media all and (max-width: 425px) {
     display: flex;
-    // height: 75px;
   }
 
   .header-logo-one {

@@ -969,7 +969,15 @@ textarea {
 
 .main-header .smyle-logo .blk-wht-logo {
 	width: 375px;
+	padding: 1em;
 	margin-left: 15px;
+}
+
+@media only screen and (max-width: 425px) {
+	.main-header .smyle-logo {
+		padding: 0.5em !important;
+		margin-left: 0px !important;
+	}
 }
 
 .main-header .logo-headers,
