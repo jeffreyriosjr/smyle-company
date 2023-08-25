@@ -31,6 +31,10 @@
             <a href="https://www.instagram.com/smyle_co_/">
               <i class="fab fa-instagram"></i></a>
           </li>
+          <li class="icon-links">
+            <a href="https://www.youtube.com/@SmyleCopodcast">
+            <i class="fab fa-youtube"></i></a>
+          </li>
         </ul>
       </div>
     </div>
