@@ -39,58 +39,48 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<?php wp_body_open(); ?>
-	<div id="page" class="site">
-		<a class="skip-link screen-reader-text" href="#primary">
-			<?php esc_html_e('Skip to content', 'smyle-co'); ?>
-		</a>
-		<header id="masthead" class="site-header">
-			<div class="main-header">
-				<div class="smyle-logo btn">
-					<a href="http://smyle-sd.com">
-						<img src="https://smyleco.local/wp-content/uploads/2022/08/output-onlinepngtools-2-e1670482796363.png"
-							class="blk-wht-logo"></a>
-				</div>
 
-				<nav id="site-navigation" class="smyle-navbar main-navigation navbar-expand-sm">
-					<button class="menu-items navbar-toggler menu-toggle" aria-controls="primary-menu"
-						aria-expanded="false" data-target="#home">SMYLE<br>HERE
-					</button>
-					<?php
-					wp_nav_menu(
-						array(
-							'theme_location' => 'menu-1',
-							'menu_id' => 'primary-menu',
-						)
-					);
-					?>
-				</nav>
-			</div><!-- #site-navigation -->
-			<!-- <div class="news-btn container text-center mt-2">
-				 Button trigger modal -->
-				<!-- <button type="button" class="news-update btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-					BIG EXCITING NEWS HERE!
-				</button> -->
 
-				<!-- Modal -->
-				<!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-					tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content text-center">
-							<div class="modal-header">
-								<h3 class="modal-title w-100" id="staticBackdropLabel">WE DID IT!</h3>
-								<button type="button" class="btn-close" data-bs-dismiss="modal"
-									aria-label="Close"></button>
-							</div>
-							<div class="modal-body">
-								<img class="award-image" src="https://smyle-sd.com/wp-content/uploads/2023/06/349114437_614295234000921_2729918911355567423_n.jpg" alt="smyle image of award">
-								<h3>Our very own Smyle_Co_ gummy "North Park Cherry Punch" officially won the award for "Best Flavor" at the "Farmer's Cup" award ceremony for the "People's Choice Awards"!</h3>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-							</div>
-						</div>
-					</div>
-				</div> -->
-			</div> 
-		</header><!-- #masthead -->
+	<div class="site topnav" id="myTopnav page">
+		<div class="main-header">
+			<div class="smyle-logo btn">
+				<a href="http://smyle-sd.com" onclick="myFunction()">
+					<img src="https://smyleco.local/wp-content/uploads/2022/10/smyleLogo.png" class="blk-wht-logo"></a>
+			</div>
+
+			<nav id="site-navigation" class="smyle-navbar main-navigation navbar-expand-sm">
+				<button class="menu-items navbar-toggler menu-toggle" aria-controls="primary-menu" aria-expanded="false"
+					data-target="#home">SMYLE<br>HERE
+				</button>
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id' => 'primary-menu',
+					)
+				);
+				?>
+			</nav>
+		</div><!-- #site-navigation -->
+	</div>
+	<!-- <a href="#home" class="active">Home</a>
+		<a href="#news">News</a>
+		<a href="#contact">Contact</a>
+		<a href="#about">About</a>
+		<a href="javascript:void(0);" class="icon" >
+			<i class="fa fa-bars"></i>
+		</a> -->
+	</div>
+
+
+
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
